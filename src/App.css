@@ -1,0 +1,140 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.step {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+._border {
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 100%;
+}
+.step label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.step input,
+.step select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  max-width: 500px;
+}
+
+.step select {
+  margin-bottom: 20px;
+}
+
+.step button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.step button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.success {
+  color: green;
+  margin-top: 20px;
+}
+
+.error {
+  color: red;
+  margin-top: 20px;
+}
+._button {
+  width: 80px;
+  height: 30px;
+  cursor: pointer;
+}
+._tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+._tab li {
+  list-style: none;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+._tab li:last-child {
+  margin-right: 0;
+}
+._tab li:hover {
+  background: #61dafb;
+}
+._tab .active {
+  background: #61dafb;
+}
+._form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
